@@ -7,13 +7,13 @@
            fetch="https://github.com/"
            review="review.cyanogenmod.org" />
 
-  <remote  name="pacme"
-           fetch="https://github.com/ROM-PacMe"
-            revision="gpe-m" />
+  <remote  name="slim"
+           fetch="https://github.com/SlimRoms"
+            revision="mm6.0" />
   
-  <remore   name="slim"
-            fetch="https://github.com/SlimROMs"
-            revision="mm6.0"/>
+  <remore   name="pacme"
+            fetch="https://github.com/ROM-PacMe"
+            revision="gpe-m"/>
 	
   <remote   name="rro"
             fetch="https://github.com/AOSP-RRO"
