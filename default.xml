@@ -10,7 +10,11 @@
   <remote  name="pacme"
            fetch="https://github.com/ROM-PacMe"
             revision="gpe-m" />
-
+  
+  <remore   name="slim"
+            fetch="https://github.com/SlimROMs"
+            revision="mm6.0"/>
+	
   <remote   name="rro"
             fetch="https://github.com/AOSP-RRO"
 	        revision="marshmallow" />
