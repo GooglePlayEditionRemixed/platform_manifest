@@ -11,7 +11,7 @@
            fetch="https://github.com/SlimRoms"
             revision="mm6.0" />
   
-  <remore   name="pacme"
+  <remote   name="pacme"
             fetch="https://github.com/ROM-PacMe"
             revision="gpe-m"/>
 	
