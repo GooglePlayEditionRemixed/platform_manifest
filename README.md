@@ -15,7 +15,7 @@ This project is based on [**AOSP-OMS**](https://github.com/AOSP-RRO) & [**AOSPEx
 
 To initialize your local repository using the AospExtended trees, use a command like this:
 
-        repo init -u git://github.com/GooglePlayEditionRemixed/manifest.git -b gpe-m
+        repo init -u git://github.com/GooglePlayEditionRemixed/platform_manifest.git -b gpe-m
 
 Sync up the Repo:
 
