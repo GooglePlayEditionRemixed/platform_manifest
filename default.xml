@@ -14,6 +14,14 @@
   <remote   name="pacme"
             fetch="https://github.com/ROM-PacMe"
             revision="gpe-m"/>
+
+  <remote   name="gpe"
+            fetch="https://github.com/GooglePlayEditionRemixed"
+            revision="gpe-m"/>
+
+  <remote   name="gpe-devices"
+            fetch="https://github.com/gpe-remixed-devices"
+            revision="gpe-m"/>
 	
   <remote   name="rro"
             fetch="https://github.com/AOSP-RRO"
@@ -34,17 +42,15 @@
            sync-f="true"
            sync-q="true" />
 
-<!-- AospExtended -->
-  <project name="platform_build" path="build" groups="pdk,tradefed" remote="ex" >
+<!-- Google Play Edition -->
+  <project name="platform_build" path="build" groups="pdk,tradefed" remote="gpe" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="build.sh" dest="build.sh" />
   </project>
-  <project name="platform_vendor_aosp" path="vendor/aosp" remote="ex" />
-  <project name="manifest" path="manifest" remote="ex" />
-
-<!-- ROM-PacMe -->
-  <project path="packages/apps/FlickLauncher" name="FlickLauncher" remote="pacme" />
-
+  <project name="platform_vendor_aosp" path="vendor/aosp" remote="gpe" />
+  <project name="platform_manifest" path="manifest" remote="gpe" />
+  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="gpe" />
+  
  
 <!-- AOSP-RRO -->
 
@@ -52,7 +58,7 @@
   <project name="platform_bootable_recovery" path="bootable/recovery" remote="rro" />
   <project name="platform_external_sepolicy" path="external/sepolicy" groups="pdk" remote="rro" />
   <project name="platform_external_dhcpcd" path="external/dhcpcd" remote="rro" />
-  <project name="platform_frameworks_base" path="frameworks/base" groups="pdk-cw-fs" remote="rro" />
+  <project name="platform_frameworks_base" path="frameworks/base" groups="pdk-cw-fs" remote="gpe" />
   <project name="platform_frameworks_av" path="frameworks/av" groups="pdk" remote="rro" />
   <project name="platform_frameworks_native" path="frameworks/native" groups="pdk" remote="rro" />
   <project name="platform_frameworks_opt_net_ims" path="frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" remote="rro" />
@@ -78,7 +84,6 @@
   <project name="platform_packages_apps_Nfc" path="packages/apps/Nfc" remote="rro" />
   <project name="platform_packages_apps_OTA" path="packages/apps/OTA" remote="rro" />
   <project name="platform_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="rro" />
-  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="rro" />
   <project name="platform_packages_apps_Snap" path="packages/apps/Snap" groups="pdk" remote="rro" />
   <project name="platform_packages_apps_Stk" path="packages/apps/Stk" remote="rro" />
   <project name="platform_packages_apps_Terminal" path="packages/apps/Terminal" remote="rro" />
