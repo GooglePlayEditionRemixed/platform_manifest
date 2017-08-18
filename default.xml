@@ -47,6 +47,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="build.sh" dest="build.sh" />
   </project>
+  <project name="hardware_libhardware" path="hardware/libhardware" groups="pdk" remote="gpe" />
   <project name="platform_vendor_aosp" path="vendor/aosp" remote="gpe" />
   <project name="platform_manifest" path="manifest" remote="gpe" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="gpe" />
@@ -64,7 +65,6 @@
   <project name="platform_frameworks_opt_net_ims" path="frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" remote="rro" />
   <project name="platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="rro" groups="pdk" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" groups="pdk" remote="rro" />
-  <project name="platform_hardware_libhardware" path="hardware/libhardware" groups="pdk" remote="rro" />
   <project name="platform_hardware_ril" path="hardware/ril-caf" groups="pdk" remote="rro" />
   <project name="platform_hardware_broadcom_libbt" path="hardware/broadcom/libbt" remote="rro" />
   <project name="platform_hardware_broadcom_wlan" path="hardware/broadcom/wlan" remote="rro" />
