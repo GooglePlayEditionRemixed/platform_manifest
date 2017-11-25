@@ -51,6 +51,8 @@
   <project name="platform_vendor_aosp" path="vendor/aosp" remote="gpe" />
   <project name="platform_manifest" path="manifest" remote="gpe" />
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="gpe" />
+  <project name="packages_prebuilts_GBoard" path="packages/prebuilts/GBoard" remote="gpe" />
+  <project name="packages_prebuilts_Launcher3" path="packages/prebuilts/Launcher3" remote="gpe" />
   
  
 <!-- AOSP-RRO -->
